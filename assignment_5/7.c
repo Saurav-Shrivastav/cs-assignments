@@ -1,5 +1,3 @@
-/* Q7. WAP that reads 10 different numbers and compute the sum of all odd and even numbers separately.
-Use for loop, while loop and do-while loop each separately for this program. */
 #include <stdio.h>
 int main() {
     int o_count = 0, e_count = 0, x, num;

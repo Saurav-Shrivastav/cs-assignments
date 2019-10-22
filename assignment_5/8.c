@@ -1,7 +1,3 @@
-/* WAP to read the marks of 10 students and count the number of students marks lie between 45 and 65
-using for and continue statements. The entered marks should be between 0 and 100 else the loop will
-terminate and it simply displays: ‘A wrong mark has been entered’. */
-
 #include <stdio.h>
 int main() {
     int count = 0, num, marks;
