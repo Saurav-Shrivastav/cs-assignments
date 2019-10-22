@@ -10,3 +10,4 @@ int main(){
 	printf("%d", arr1[1]);
 	return 0;
 }
+//segmentation fault in this code so please check
