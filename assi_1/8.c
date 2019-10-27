@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int main() {
   printf("1. Fahrenheit to Celsius\n2. Celsius to Fahrenheit\nEnter your choice : ");
   int o;
@@ -17,7 +16,10 @@ int main() {
       printf("The temperature in Fahrenheit is : %f", ((c*9/5) + 32));
       break;
     default :
-    printf("g*ndu samjha hai kya");
+    	{
+		printf("You can select only one of the two options");
+		main();
+		}
   }
   return 0;
 }

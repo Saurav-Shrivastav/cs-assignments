@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int main() {
   printf("Enter three numbers : ");
   int a, b, c;
