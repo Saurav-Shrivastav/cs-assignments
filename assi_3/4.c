@@ -1,8 +1,8 @@
 #include <stdio.h>
 int main() {
-  printf("Enter three numbers : ");
-  int a, b, c;
-  scanf("%d %d %d", &a, &b, &c);
-  printf("Greatest number : %d\n", (a>b)?((a>c)?a:c):(b>c)?b:c);
-  printf("Smallest number : %d", (a<b)?((a<c)?a:c):(b<c)?b:c);
+    int a, b, c;
+	printf("Enter three numbers: ");
+	scanf("%d %d %d", &a, &b, &c);
+	printf("Largest number is: %d\n", ((a>b) ? ((a>c) ? a :c ) : ((b>c) ? b : c )));
+	printf("Smallest number is: %d", ((a<b) ? ((a<c) ? a :c ) : ((b<c) ? b : c )));
 }

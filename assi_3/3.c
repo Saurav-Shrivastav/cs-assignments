@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <math.h>
-#define PI 3.14159
 int main() {
-  float angle;
-  printf("Enter the angle in degrees : ");
-  scanf("%f", &angle);
-  printf("sin(%0.2f) = %0.2f\n", angle, sin(angle*PI/180));
-  printf("cos(%0.2f) = %0.2f\n", angle, cos(angle*PI/180));
+	int n;
+	printf("Enter the angle in degrees : ");
+	scanf("%d", &n);
+	float rad = n*(3.14159/180);
+	printf("The sin value is: %f \n The cos value is: %f", sin(rad), cos(rad));
+	return 0;
 }
