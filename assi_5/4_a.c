@@ -1,17 +1,20 @@
 #include <stdio.h>
-
-int main() {
-    int height, spaces, step, num;
-    printf("Enter the height of the triangle : ");
-    scanf("%d", &height);
-
-    for (step = 0; step < height; step++) {
-        for (spaces = 0; spaces < height-step-1; spaces++)
-            printf("  ");
-        for (num = step+1; num < (step+1)*2; num++)
-            printf("%d ", num);
-        for (num = step*2; num > step ; num--)
-            printf("%d ", num);
-        printf("\n");
-    }
+int main(){
+	int i,spaces=4, z=1,t=0;
+	for(i=1 ; i<=5 ; i++){
+		int count;
+		for(spaces=0 ; spaces<=5-i-1 ; spaces++){ //this loop prints the spaces 
+			printf("  ");
+		}
+		for(count=i ; count<=z ; count++ ){     //this loop prints he numbers
+			printf("%d ", count);
+		}
+		t = (i-1)*2;
+		for(t ; t>=i ; t-- ){
+			printf("%d ", t);
+		}
+		printf("\n");
+		z +=2;
+	}
+	return 0;
 }
