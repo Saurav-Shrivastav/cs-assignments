@@ -1,13 +1,21 @@
 #include <stdio.h>
+int count_even(int *a);
+int count = 0;
 int main(){
-	int n;
-	printf("enter the number of integers that you eish to check for being even or odd");
-	scanf("%d", n);
-	int arr1[n];
-	for (int i = 0; i < n; i++){
-		scanf("%d", &arr1[i]);
+	int num, n,  i=1;
+	printf("How many numbers do you wish to enter?");
+	scanf("%d", &n);
+	while(i<=n){
+		scanf("%d", &num);
+		count_even(&num);
+		i++;
 	}
-	printf("%d", arr1[1]);
-	return 0;
+	printf("%d", count);
 }
-//segmentation fault in this code so please check
+
+int count_even(int *a){
+	if(*a%2==0){
+		count++;
+	}
+}
+
