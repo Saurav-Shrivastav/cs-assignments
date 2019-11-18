@@ -1,14 +1,14 @@
 #include <stdio.h>
 int main(){
-	int row=0;
-	while(row<5){
-		int i=1;
-		while(i<=5){
-			printf("%d  ", i);
-			i++;
+	int i=1,j=1;
+	while(i<=5){
+		j=1;
+		while(j<=5){
+			printf("%d  ", j);
+			j++;
 		}
 		printf("\n");
-		row++;
+		i++;
 	}
 	return 0;
 }
